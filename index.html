@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/icon" />
+  
+    <title>GAME STORE</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
+      <nav class="navbar navbar-toggleable-md">
+        <div class="container">
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <a
+            class="navbar-brand d-flex align-items-center logo"
+            href="index.html"
+            ><i class="fas fa-gamepad mr-3 fa-2x"></i>GAME STORE</a
+          >
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><i class="fas fa-home mr-2"></i>HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Collections.html"
+                  ><i class="fas fa-th-large mr-2"></i>Shopping Cart</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Purchase LISTE.html"
+                  ><i class="fas fa-shopping-cart mr-2"></i>PURCHASE LIST</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact US.html"
+                  ><i class="fas fa-address-card mr-2"></i>CONTACT US</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="search-section py-5 mb-4">
+        <h1>GAME STORE</h1>
+        <h6>Buying Video Games Couldn't Be Simpler Than This !</h6>
+        <form
+          class="w-75 mx-auto my-4 d-flex align-items-center justify-content-center"
+        >
+          <div>
+            <select class="form-control form-control-sm" id="console-select">
+              <option value="" selected disabled hidden>Select Platform</option>
+              <option>PC Gaming</option>
+              <option>PlayStation</option>
+              <option>Xbox</option>
+              <option>VR Games</option>
+            </select>
+          </div>
+          <div>
+            <select class="form-control form-control-sm" id="category-select">
+              <option value="" selected disabled hidden>Select Category</option>
+              <option>Action/Adventure</option>
+              <option>Horror</option>
+              <option>Racing</option>
+              <option>RPG</option>
+              <option>Sport</option>
+            </select>
+          </div>
+          <div class="w-50">
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              id="search-box"
+              placeholder="What do you search for ?"
+            />
+          </div>
+
+          <input
+            class="a-search-btn search-btn ml-3"
+            type="button"
+            value="Search"
+            onclick="window.location.href='results.html'"
+          />
+        </form>
+      </div>
+
+      <div class="featured-games px-sm-5">
+        <h5 class="mx-3">
+          <i class="fas fa-award mr-2"></i>FEATURED & RECOMMENDED
+        </h5>
+        <div class="py-4 d-flex justify-content-around align-items-center">
+          <i class="fas fa-chevron-left fa-2x"></i>
+          <div
+            class="item bg-faded box-shadow d-flex align-items-center mx-3 p-4"
+          >
+            <img
+              class="w-50"
+              src="https://th.bing.com/th/id/R.a64ebaf760cefe10a4bd2383f0aa4168?rik=9hWDfpmOHg4bbA&pid=ImgRaw&r=0"
+              alt="death-stranding"
+            />
+            <div class="item-info w-50 pl-3 d-flex flex-column">
+              <h5>Death stranding</h5>
+              <div class="my-2">
+                <strong>Available on :</strong> PC/PlayStation/Xbox
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="far fa-plus-square fa-2x"></i>
+                <div>
+                  <span class="oldprice">79.99DT</span>
+                  <span class="newprice">44.99DT</span>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                    <div class="del">
+                      <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                      <button class="like"><i class="fas fa-heart"></i></button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right fa-2x"></i>
+        </div>
+      </div>
+      <div class="categories-section p-5 bg-faded">
+        <div>
+          <h5><i class="fas fa-bolt mr-2"></i>SPECIAL OFFERS</h5>
+          <div
+            class="items-container row justify-content-around align-items-center py-4"
+          >
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img class="w-100 mb-2" src="https://th.bing.com/th/id/OIP.T9ImsJ7rIiqGsw2n6V2VRwHaEP?pid=ImgDet&w=616&h=353&rs=1">
+              <div class="item-info">
+                <h5>Call of Duty</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="oldprice">59.99DT</span>
+                    <span class="newprice">29.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="https://th.bing.com/th/id/R.924ee5d3f20c3465c92712f705decf25?rik=0CGZ%2b6mnJVmVMQ&pid=ImgRaw&r=0"
+                alt="Fortnite Battle Royale"
+              />
+              <div class="item-info">
+                <h5>Fortnite Battle Royale</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="oldprice">44.99DT</span>
+                    <span class="newprice">29.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="data:image/jpeg;base64,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"
+                alt="Rainbow Six Siege"
+              />
+              <div class="item-info">
+                <h5>Rainbow Six Siege</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="oldprice">39.99DT</span>
+                    <span class="newprice">17.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="https://th.bing.com/th/id/R.e42abcc4f3580425260797aa3f48c712?rik=iaho%2fDc9opvkOQ&pid=ImgRaw&r=0"
+                alt="The Witcher : Wild Hunt"
+              />
+              <div class="item-info">
+                <h5>The Witcher : Wild Hunt</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="oldprice">49.99DT</span>
+                    <span class="newprice">21.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5><i class="fas fa-chevron-circle-up mr-2"></i>TOP SELLERS</h5>
+          <div
+            class="items-container row justify-content-around align-items-center py-4"
+          >
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="https://th.bing.com/th/id/R.1e7e58fa0f4ddb8a458db3fdd0cdf2ec?rik=o%2fKBA1x7bX1LAg&pid=ImgRaw&r=0"
+                alt="Counter-Strike: Global Offensive"
+              />
+              <div class="item-info">
+                <h5>Counter-Strike: Global Offensive</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">34.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="https://th.bing.com/th/id/R.7c6cc44037cc2ad95323bdb1e6611de7?rik=D2roBC41ZZktEg&pid=ImgRaw&r=0"
+                alt="Grand Theft Auto V"
+              />
+              <div class="item-info">
+                <h5>Grand Theft Auto V</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">59.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src=https://th.bing.com/th/id/R.fd550799c2b1078f194083b5d284c017?rik=t6nKKpkBKFivNg&pid=ImgRaw&r=0"
+                alt="eFootball 2023"
+              />
+              <div class="item-info">
+                <h5>eFootball 2023</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">39.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="https://th.bing.com/th/id/R.11ad9aaaf289de9cd01b90558611314c?rik=B1I2vFSMVCncFA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-hJVyw-4wPx8%2fT-YQPLSUD7I%2fAAAAAAAABGg%2foGhup0G0BYc%2fs1600%2fleft-4-dead-2-logo-wallpaper.jpg&ehk=vtPXGfbvRfrrWwgX2jKyFXlo7OzqsLE4lxHxmcoMFj4%3d&risl=&pid=ImgRaw&r=0"
+                alt="Left 4 Dead 2"
+              />
+              <div class="item-info">
+                <h5>Left 4 Dead 2</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">19.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5><i class="fas fa-stopwatch mr-2"></i>NEW RELEASES</h5>
+          <div
+            class="items-container row justify-content-around align-items-center py-4"
+          >
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="https://th.bing.com/th/id/OIP.x650dVD4mE_kO4GDLDRU6AAAAA?pid=ImgDet&w=250&h=333&rs=1"
+              />
+              <div class="item-info">
+                <h5>Control Ultimate Edition</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">31.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="https://mediamaster.vandal.net/m/45447/necromunda-underhive-wars--202081610193798_2.jpg"
+                alt="Necromunda: Underhive Wars"
+              />
+              <div class="item-info">
+                <h5>Necromunda: Underhive Wars</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">24.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="https://th.bing.com/th/id/OIP.sjEQePaFnXSo7t2KSuthZQHaLH?pid=ImgDet&w=600&h=900&rs=1"
+                alt="Crusader Kings III"
+              />
+              <div class="item-info">
+                <h5>Crusader Kings III</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">49.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="https://th.bing.com/th/id/OIP.7QUXjUfBSWutnIiuXiTd4QHaJ3?pid=ImgDet&rs=1"
+                alt="PUBG:Battlegrounds"
+              />
+              <div class="item-info">
+                <h5>PUBG: Battlegrounds</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">59.99DT</span>
+                  </div>
+                  <div class="btn-cont">
+                    <button class="plus">+</button>
+                    <p>0</p>
+                    <button class="minus">-</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="p-4">
+      <div class="row justify-content-around">
+        <div class="row-sm col-lg-3 justify-content-start align-items-center">
+          <a
+            class="navbar-brand d-flex justify-content-center align-items-center"
+            href="#"
+            ><i class="fas fa-gamepad mr-2 fa-2x"></i>
+            <div class="logo">GAME STORE</div></a
+          >
+
+        </div>
+        <div class="row-sm col-lg-9 row justify-content-around">
+          <ul class="">
+            <li class="list-name">
+              <a href="#"><strong>PLATFORM</strong></a>
+            </li>
+            <li><a href="#">PC Gaming</a></li>
+            <li><a href="#">PlayStation</a></li>
+            <li><a href="#">Xbox</a></li>
+            <li><a href="#">Vr Games</a></li>
+          </ul>
+          <ul class="">
+            <li class="list-name">
+              <a href="#"><strong>CATEGORIES</strong></a>
+            </li>
+            <li><a href="#">Action/Adventure</a></li>
+            <li><a href="#">Horror</a></li>
+            <li><a href="#">Racing</a></li>
+            <li><a href="#">RPG</a></li>
+            <li><a href="#">Sport</a></li>
+          </ul>
+          <ul class="">
+            <li class="list-name">
+              <a href="#"><strong>Release Date</strong></a>
+            </li>
+            <li><a href="#">2023</a></li>
+            <li><a href="#">2022</a></li>
+            <li><a href="#">2021</a></li>
+            <li><a href="#">2020</a></li>
+            <li><a href="#">2019</a></li>
+            <li><a href="#">2018</a></li>
+            
+          </ul>
+          <div class="py-4 row-xs col-sm-4">
+            <div
+              class="d-flex col-xs row-sm align-items-center justify-content-end mb-3"
+            >
+              <div class="selection-name">COUNTRY</div>
+              <select class="form-select form-control form-control-sm">
+                <option selected>Tunisia</option>
+                <option>USA</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Germany</option>
+              </select>
+            </div>
+            <div
+              class="d-flex col-xs row-sm align-items-center justify-content-end mb-3"
+            >
+              <div class="selection-name">LANGUAGE</div>
+              <select class="form-select form-control form-control-sm">
+                <option selected>English</option>
+                <option>Arabic</option>
+                <option>Frensh</option>
+                <option>Spanish</option>
+                
+              </select>
+            </div>
+            <div
+              class="d-flex col-xs row-sm align-items-center justify-content-end" >
+               
+              <div class="selection-name">CURRENCY</div>
+              <select class="form-select form-control form-control-sm">
+                <option selected>TN Dinar</option>
+                <option>US Dollar</option>
+                <option>Euro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bottom-footer row justify-content-around align-items-center py-3"
+      >
+    
+       
+      </div>
+    </footer>
+  </body>
+</html>
